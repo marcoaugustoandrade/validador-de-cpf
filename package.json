@@ -1,6 +1,6 @@
 {
   "name": "validador-de-cpf",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Validador de CPF",
   "main": "bin/validador-de-cpf.js",
   "scripts": {

@@ -9,6 +9,7 @@ const listaInvalida = new Set([
   "77777777777",
   "88888888888",
   "99999999999",
+  "12345678900"
 ]);
 
 const satinizar = (cpf) => {
@@ -21,15 +22,13 @@ const verificarCPF = (cpf) => {
 
   // É inválido caso esteja na lista inválida
   if (listaInvalida.has(cpf)) {
-    console.log("Inválido: está na lista de exclusão");
     return false;
   }
 
-  // Caso o tamanho da string não seja do tamanho 11
-  // if (cpf.lenght != 11) {
-  //   console.log('Inválido: mais que 11 caracteres')
-  //   return false;
-  // }
+  // Caso o tamanho do CPF após satinizar não seja do tamanho 11
+  if (cpf.length != 11) {
+    return false;
+  }
 
   // Calculando o primero dígito verificador
   let primeiroDigito = 0;
@@ -61,7 +60,10 @@ const verificarCPF = (cpf) => {
     segundoDigito = 11 - resto;
   }
 
-  if (primeiroDigito == parseInt(cpf[9]) && segundoDigito == parseInt(cpf[10])) {
+  if (
+    primeiroDigito == parseInt(cpf[9]) &&
+    segundoDigito == parseInt(cpf[10])
+  ) {
     return true;
   }
   return false;

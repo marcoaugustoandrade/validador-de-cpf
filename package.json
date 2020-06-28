@@ -1,0 +1,29 @@
+{
+  "name": "validador-de-cpf",
+  "version": "1.0.0",
+  "description": "Validador de CPF com propositos educativos",
+  "main": "bin/index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcoaugustoandrade/validador-de-cpf.git"
+  },
+  "keywords": [
+    "validador",
+    "CPF"
+  ],
+  "author": "Marco Andrade",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/marcoaugustoandrade/validador-de-cpf/issues"
+  },
+  "homepage": "https://github.com/marcoaugustoandrade/validador-de-cpf#readme",
+  "dependencies": {
+    "jest": "^26.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.3.1"
+  }
+}

@@ -1,8 +1,8 @@
 {
   "name": "validador-de-cpf",
   "version": "1.0.0",
-  "description": "Validador de CPF com propositos educativos",
-  "main": "bin/index.js",
+  "description": "Validador de CPF",
+  "main": "bin/validador-de-cpf.js",
   "scripts": {
     "test": "jest"
   },
@@ -14,7 +14,7 @@
     "validador",
     "CPF"
   ],
-  "author": "Marco Andrade",
+  "author": "Marco Andrade <marco.andrade@ifro.edu.br> (https://marcoandrad.de)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/marcoaugustoandrade/validador-de-cpf/issues"

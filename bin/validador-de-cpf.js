@@ -21,13 +21,15 @@ const verificarCPF = (cpf) => {
 
   // É inválido caso esteja na lista inválida
   if (listaInvalida.has(cpf)) {
+    console.log("Inválido: está na lista de exclusão");
     return false;
   }
 
   // Caso o tamanho da string não seja do tamanho 11
-  if (cpf.lenght != 11) {
-    return false;
-  }
+  // if (cpf.lenght != 11) {
+  //   console.log('Inválido: mais que 11 caracteres')
+  //   return false;
+  // }
 
   // Calculando o primero dígito verificador
   let primeiroDigito = 0;
@@ -49,7 +51,6 @@ const verificarCPF = (cpf) => {
   somador = 0;
   multiplicador = 11;
   for (let i = 0; i < 10; i++) {
-    console.log(somador);
     somador = somador + cpf[i] * multiplicador;
     multiplicador -= 1;
   }
@@ -60,8 +61,8 @@ const verificarCPF = (cpf) => {
     segundoDigito = 11 - resto;
   }
 
-  if (segundoDigito == cpf[9] && primeiroDigito[10] == primeiroDigito) {
-    return true
+  if (primeiroDigito == parseInt(cpf[9]) && segundoDigito == parseInt(cpf[10])) {
+    return true;
   }
   return false;
 };

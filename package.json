@@ -21,9 +21,10 @@
   },
   "homepage": "https://github.com/marcoaugustoandrade/validador-de-cpf#readme",
   "dependencies": {
-    "jest": "^26.1.0"
+    
   },
   "devDependencies": {
-    "eslint": "^7.3.1"
+    "eslint": "^7.3.1",
+    "jest": "^26.1.0"
   }
 }

@@ -9,6 +9,6 @@ npm install validador-de-cpf
 ## Utilizando
 
 ```
-const verificarCPF = require("./index");
+const verificarCPF = require("validador-de-cpf");
 console.log(verificarCPF('111.111.111-11'));
 ```

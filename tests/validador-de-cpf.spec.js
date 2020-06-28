@@ -1,4 +1,4 @@
-const verificarCPF = require("../bin/index");
+const verificarCPF = require("../bin/validador-de-cpf");
 
 test("O CPF 000.000.000-00 deve ser inválido", () => {
   expect(verificarCPF("000.000.000-00")).toBe(false);
